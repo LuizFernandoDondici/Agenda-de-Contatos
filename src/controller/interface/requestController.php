@@ -1,6 +1,6 @@
 <?php
 
-namespace Controller\Interface;
+namespace AgendaDeContatos\Src\Controller\Interface;
 
 interface RequestController
 {

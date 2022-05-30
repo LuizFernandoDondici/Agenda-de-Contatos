@@ -3,7 +3,7 @@
 spl_autoload_register(function (string $nomeClasse){
 
     $caminhoArquivo =  __DIR__ . $nomeClasse;
-    $caminhoArquivo = str_replace('src', 'src\\', $caminhoArquivo);
+    $caminhoArquivo = str_replace('AgendaDeContatos\Src', '\\', $caminhoArquivo);
     $caminhoArquivo = str_replace('\\', DIRECTORY_SEPARATOR, $caminhoArquivo);
     $caminhoArquivo .= '.php';
     

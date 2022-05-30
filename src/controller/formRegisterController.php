@@ -4,7 +4,7 @@ namespace AgendaDeContatos\Src\Controller;
 
 use AgendaDeContatos\Src\Controller\Interface\RequestController;
 
-class SaveContatoController implements RequestController
+class FormRegisterController implements RequestController
 {
 
     public function __construct()
@@ -13,7 +13,7 @@ class SaveContatoController implements RequestController
 
     public function processRequest(): void
     {
-        
+        require __DIR__ . "../../view/body/form-register.php";
     }
 
 }

@@ -1,8 +1,9 @@
 <?php
 
-namespace Route;
+namespace AgendaDeContatos\Src\Route;
 
-use Controller\formCadastrarController;
+use AgendaDeContatos\Src\Controller\FormRegisterController;
+use AgendaDeContatos\Src\Controller\SaveContatoController;
 
 class Route
 {
@@ -13,9 +14,13 @@ class Route
         switch ($path) {
             
             case '/formulario-contato':
-                $controller = new formCadastrarController();
+                $controller = new FormRegisterController();
                 break; 
-        
+            
+            case '/salvar-contato':
+                $controller = new SaveContatoController();
+                break; 
+            
         }        
 
         $controller->processRequest();

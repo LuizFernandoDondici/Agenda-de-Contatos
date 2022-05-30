@@ -1,6 +1,6 @@
 <?php
 
-namespace Config;
+namespace AgendaDeContatos\Src\Config;
 
 use PDO;
 

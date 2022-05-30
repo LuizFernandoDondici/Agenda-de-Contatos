@@ -3,7 +3,7 @@
 require './autoload.php';
 
 
-use Route\Route;
+use AgendaDeContatos\Src\Route\Route;
 
 $route = new Route();
 
