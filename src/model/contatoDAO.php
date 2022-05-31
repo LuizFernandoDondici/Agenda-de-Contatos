@@ -69,4 +69,26 @@ class ContatoDAO
         }
     }
 
+
+    public function findContatoById($id):array
+    {
+        try {
+            
+            $selectQuery = 'SELECT * FROM contatos WHERE id = ?';
+
+            $stmt = $this->conn->prepare($selectQuery);
+
+            $stmt->bindParam(1, $id);
+
+            $stmt->execute();
+
+            $contactArray = $stmt->fetch();
+
+            return $contactArray;
+
+        } catch (\Throwable $th) {
+            echo 'erro select';
+        }
+    }
+
 }
