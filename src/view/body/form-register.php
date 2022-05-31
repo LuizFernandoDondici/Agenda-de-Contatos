@@ -11,7 +11,7 @@
                         <a href="/formulario-contato"> Cadastrar </a>
                     </li>
                     <li>
-                        <a href=""> Contatos </a>
+                        <a href="/lista-contato"> Contatos </a>
                     </li>
                 </ul>
             </nav>

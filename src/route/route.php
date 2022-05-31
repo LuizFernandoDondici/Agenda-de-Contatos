@@ -3,6 +3,7 @@
 namespace AgendaDeContatos\Src\Route;
 
 use AgendaDeContatos\Src\Controller\FormRegisterController;
+use AgendaDeContatos\Src\Controller\ListContatoController;
 use AgendaDeContatos\Src\Controller\SaveContatoController;
 
 class Route
@@ -20,7 +21,10 @@ class Route
             case '/salvar-contato':
                 $controller = new SaveContatoController();
                 break; 
-            
+        
+            case '/lista-contato':
+                $controller = new ListContatoController();
+                break;
         }        
 
         $controller->processRequest();

@@ -49,4 +49,24 @@ class ContatoDAO
         }
     }
 
+
+    public function findAllContacts():array
+    {
+        try {
+            
+            $selectQuery = 'SELECT id, nome FROM contatos;';
+
+            $stmt = $this->conn->prepare($selectQuery);
+
+            $stmt->execute();
+
+            $listContato = $stmt->fetchAll();
+
+            return $listContato;
+
+        } catch (\Throwable $th) {
+            echo 'erro select';
+        }
+    }
+
 }
