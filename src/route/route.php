@@ -2,6 +2,7 @@
 
 namespace AgendaDeContatos\Src\Route;
 
+use AgendaDeContatos\Src\Controller\DeleteContatoController;
 use AgendaDeContatos\Src\Controller\FormRegisterController;
 use AgendaDeContatos\Src\Controller\ListContatoController;
 use AgendaDeContatos\Src\Controller\SaveContatoController;
@@ -38,6 +39,10 @@ class Route
     
             case '/atualizar-contato':
                 $controller = new UpdateContatoController();
+                break;
+
+            case '/deletar-contato':
+                $controller = new DeleteContatoController();
                 break;
         }        
 

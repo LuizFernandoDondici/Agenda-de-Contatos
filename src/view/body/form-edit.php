@@ -70,8 +70,8 @@
                     <input class="form-input" type="text" name="uf" value="<?php echo $contato['uf'];?>" disabled>
                 </div>
                 <div>
-                    <a class="form-link" href="/editar-contato?id=<?php echo $contato['id']; ?>"> Editar </a> </button>
-                    <p class="form-link"> Deletar </p> </button>
+                    <a class="form-link" href="/editar-contato?id=<?php echo $contato['id']; ?>"> Editar </a> 
+                    <a class="form-link" href="/deletar-contato?id=<?php echo $contato['id']; ?>"> Deletar </a> 
                 </div>
             </form> 
             <?php endif; ?>

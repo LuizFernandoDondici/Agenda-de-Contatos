@@ -125,4 +125,22 @@ class ContatoDAO
         }
     }
 
+
+    public function deleteContato($id):bool
+    {
+        try {
+
+            $deleteQuery = 'DELETE FROM contatos WHERE id = ?';
+
+            $stmt = $this->conn->prepare($deleteQuery);
+
+            $stmt->bindParam(1, $id);
+
+            return $stmt->execute();
+
+        } catch (\Throwable $th) {
+            echo 'erro delete';
+        }
+    }
+
 }
