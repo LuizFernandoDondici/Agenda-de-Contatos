@@ -30,6 +30,10 @@ class Route
             case '/visualizar-contato':
                 $controller = new SelectContatoController();
                 break; 
+
+            case '/editar-contato':
+                $controller = new SelectContatoController();
+                break;
                       
         }        
 
