@@ -17,7 +17,7 @@ class ListContatoController implements RequestController
         
         $contatoDAO = new ContatoDAO();
 
-        $listContato = $contatoDAO->findAllContacts();
+        $listContato = $contatoDAO->findAllContatos();
 
         require __DIR__ . "../../view/body/list-contato.php";
 

@@ -50,7 +50,7 @@ class ContatoDAO
     }
 
 
-    public function findAllContacts():array
+    public function findAllContatos():array
     {
         try {
             
