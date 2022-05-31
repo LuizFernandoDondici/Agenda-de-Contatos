@@ -6,6 +6,7 @@ use AgendaDeContatos\Src\Controller\FormRegisterController;
 use AgendaDeContatos\Src\Controller\ListContatoController;
 use AgendaDeContatos\Src\Controller\SaveContatoController;
 use AgendaDeContatos\Src\Controller\SelectContatoController;
+use AgendaDeContatos\Src\Controller\UpdateContatoController;
 
 class Route
 {
@@ -34,7 +35,10 @@ class Route
             case '/editar-contato':
                 $controller = new SelectContatoController();
                 break;
-                      
+    
+            case '/atualizar-contato':
+                $controller = new UpdateContatoController();
+                break;
         }        
 
         $controller->processRequest();
