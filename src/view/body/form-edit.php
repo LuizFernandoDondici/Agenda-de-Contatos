@@ -1,6 +1,15 @@
 <?php include __DIR__ . "../../head/head.php"; ?>
 
 <body>
+
+    <div class="modal">
+        <div>
+            <span class="modal-msg"> Deseja deletar o contato? </span>
+            <a class="modal-link" href="/deletar-contato?id=<?php echo $contato['id']; ?>"> SIM </a> 
+            <button class="modal-btn" id="btn-close-modal"> NÃO </button>
+        </div>
+    </div>
+
     <main>
         <header>
             
@@ -71,7 +80,7 @@
                 </div>
                 <div>
                     <a class="form-link" id="link-edit-contato" href="/editar-contato?id=<?php echo $contato['id']; ?>"> Editar </a> 
-                    <a class="form-link" id="link-delete-contato" href="/deletar-contato?id=<?php echo $contato['id']; ?>"> Deletar </a> 
+                    <a class="form-link" id="link-delete-contato"> Deletar </a> 
                 </div>
             </form> 
             <?php endif; ?>
@@ -134,6 +143,7 @@
 
             <script src="../../script/ajax/ajax-update-contato.js"></script>
             <script src="../../script/ajax/ajax-cep.js"></script>
+            <script src="../../script/open-modal/open-modal.js"></script>
             
         </Section>
     </main>
