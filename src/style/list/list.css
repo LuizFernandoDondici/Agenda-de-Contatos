@@ -1,0 +1,39 @@
+
+.table {
+    border-collapse: collapse;
+    margin: 15px auto;
+    width: 95%;
+}
+
+
+.table thead tr th {
+    border-bottom: 1px solid black;
+    height: 30px;
+}
+
+
+
+.table tbody tr:nth-child(even) {
+    background-color: rgba(100, 150, 250, 0.300);
+}
+
+.table tbody tr td {
+    height: 30px;
+}
+
+
+
+#thead-nome, #tbody-nome {
+    padding: 0 0 0 5px;
+    text-align: left;
+    width: 93%;
+}
+
+#thead-ação, #tbody-ação {
+    text-align: center;
+}
+
+#X {
+    color: green;
+    text-decoration: none;
+}

@@ -20,7 +20,7 @@
         <Section>
 
             <?php if($_SERVER['PATH_INFO'] === '/visualizar-contato'): ?>
-            <form class="form-contact" action="" method="">
+            <form class="form-contato" action="" method="">
                 <div class="container-name">
                     <label class="form-label" for="name"> Nome </label>
                     <input class="form-input" type="text" name="name" value="<?php echo $contato['nome'];?>" disabled>
@@ -70,14 +70,14 @@
                     <input class="form-input" type="text" name="uf" value="<?php echo $contato['uf'];?>" disabled>
                 </div>
                 <div>
-                    <a class="form-link" href="/editar-contato?id=<?php echo $contato['id']; ?>"> Editar </a> 
-                    <a class="form-link" href="/deletar-contato?id=<?php echo $contato['id']; ?>"> Deletar </a> 
+                    <a class="form-link" id="link-edit-contato" href="/editar-contato?id=<?php echo $contato['id']; ?>"> Editar </a> 
+                    <a class="form-link" id="link-delete-contato" href="/deletar-contato?id=<?php echo $contato['id']; ?>"> Deletar </a> 
                 </div>
             </form> 
             <?php endif; ?>
 
             <?php if($_SERVER['PATH_INFO'] === '/editar-contato'): ?>
-            <form class="form-contact" action="/atualizar-contato?id=<?php echo $contato['id']; ?>" method="POST">
+            <form class="form-contato" action="/atualizar-contato?id=<?php echo $contato['id']; ?>" method="POST">
             <div class="container-name">
                     <label class="form-label" for="name"> Nome </label>
                     <input class="form-input" type="text" name="name" value="<?php echo $contato['nome'];?>">

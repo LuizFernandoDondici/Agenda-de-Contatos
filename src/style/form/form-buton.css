@@ -1,0 +1,42 @@
+
+.form-btn {
+    border: 1px solid;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 15px;
+    margin: 15px 0 0 0;
+    outline: 0;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+#btn-save-contato {
+    background-color: mediumblue;
+}
+
+#btn-update-contato {
+    background-color: darkcyan; 
+}
+
+.form-link {
+    border: 1 solid;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    padding: 1%;
+    text-align: center;
+    text-decoration: none;
+    width: 47.7%;
+}
+
+#link-edit-contato {
+    background-color: green;
+    margin: 15px 0 0 0;
+}
+
+#link-delete-contato {
+    background-color: red;
+    margin: 15px 0 0 0;
+}
