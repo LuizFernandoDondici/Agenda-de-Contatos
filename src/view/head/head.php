@@ -16,5 +16,6 @@
     <link rel="stylesheet" href="../../style/form/form-input.css">
     <link rel="stylesheet" href="../../style/form/form-buton.css">
     <link rel="stylesheet" href="../../style/modal/modal.css">
+    <link rel="stylesheet" href="../../style/alert/alert.css">
 
 </head>

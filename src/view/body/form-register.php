@@ -71,6 +71,9 @@
                 <div>
                     <button class="form-btn" id="btn-save-contato" type="submit"> Salvar </button>
                 </div>
+                <div class="alert-register">
+                    <span class="msg-alert-register"></span>
+                </div>
             </form> 
 
             <script src="../../script/ajax/ajax-save-contato.js"></script>

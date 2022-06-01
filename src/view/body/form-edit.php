@@ -138,6 +138,9 @@
                 <div>
                     <button class="form-btn" id="btn-update-contato" type="submit"> Atualizar </button>
                 </div> 
+                <div class="alert-register">
+                    <span class="msg-alert-register"></span>
+                </div>
             </form> 
             <?php endif; ?> 
 

@@ -27,7 +27,14 @@ document.querySelector('#btn-save-contato').addEventListener('click', (e)=>{
                 if (res.success == 1) {
                     window.location.href = '/lista-contato';
                 } else if (res.success == 0){
-                    window.alert(res.msg);
+
+                    document.querySelector('.alert-register').style.display = 'block';
+                    document.querySelector('.msg-alert-register').innerHTML = res.msg;
+                
+                    setTimeout((e) => {
+                        document.querySelector('.alert-register').style.display = 'none';
+                    }, 4000); 
+
                 } else {
                     window.alert('erro');
                 }

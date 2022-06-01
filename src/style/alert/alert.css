@@ -1,0 +1,15 @@
+
+.alert-register {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    background-color: goldenrod;
+    display: none;
+    margin: 2% 0;
+    width: 100%;
+}
+
+.msg-alert-register {
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 1%;
+}
