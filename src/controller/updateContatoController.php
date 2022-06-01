@@ -5,6 +5,7 @@ namespace AgendaDeContatos\Src\Controller;
 use AgendaDeContatos\Src\Controller\Interface\RequestController;
 use AgendaDeContatos\Src\Model\Contato;
 use AgendaDeContatos\Src\Model\ContatoDAO;
+use AgendaDeContatos\Src\Model\ContatoService;
 
 class UpdateContatoController implements RequestController
 {
@@ -32,9 +33,34 @@ class UpdateContatoController implements RequestController
              $_POST['uf']
         );
 
+        $contatoSevice = new ContatoService();
         $contatoDAO = new ContatoDAO();
 
-        $contatoDAO->updateContato($contato);
+        $validate = $contatoSevice->validadeContato($contato);
+
+        if ($validate != '') {
+            
+            ob_clean();
+            echo json_encode(
+                array(
+                    'success' => 0,
+                    'msg' => $validate,
+                )
+            );
+
+            exit;
+
+        } else {
+
+            $contatoDAO->updateContato($contato);
+
+            ob_clean();
+            echo json_encode(
+                array(
+                    'success' => 1,
+                )
+            );
+        } 
 
     }
 
