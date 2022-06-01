@@ -76,6 +76,7 @@
                 </div>
             </form> 
 
+            <script src="../../script/mask/mask.js"></script>
             <script src="../../script/ajax/ajax-save-contato.js"></script>
             <script src="../../script/ajax/ajax-cep.js"></script>
             

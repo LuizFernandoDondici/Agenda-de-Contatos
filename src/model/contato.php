@@ -69,7 +69,7 @@ class Contato
     
     public function getTel()
     {
-        return $this->tel;
+        return str_replace(array("(", ")", "-", " "), "", $this->tel);
     }
 
     public function setTel($tel)
@@ -82,7 +82,7 @@ class Contato
     
     public function getCel()
     {
-        return $this->cel;
+        return str_replace(array("(", ")", "-", " "), "", $this->cel);
     }
 
     public function setCel($cel)
@@ -121,7 +121,7 @@ class Contato
     
     public function getCep()
     {
-        return $this->cep;
+        return str_replace("-", "", $this->cep);
     }
 
     public function setCep($cep)

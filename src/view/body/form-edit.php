@@ -144,6 +144,7 @@
             </form> 
             <?php endif; ?> 
 
+            <script src="../../script/mask/mask.js"></script>
             <script src="../../script/ajax/ajax-update-contato.js"></script>
             <script src="../../script/ajax/ajax-cep.js"></script>
             <script src="../../script/open-modal/open-modal.js"></script>
