@@ -133,6 +133,7 @@
             <?php endif; ?> 
 
             <script src="../../script/ajax/ajax-update-contato.js"></script>
+            <script src="../../script/ajax/ajax-cep.js"></script>
             
         </Section>
     </main>

@@ -74,6 +74,7 @@
             </form> 
 
             <script src="../../script/ajax/ajax-save-contato.js"></script>
+            <script src="../../script/ajax/ajax-cep.js"></script>
             
         </Section>
     </main>
