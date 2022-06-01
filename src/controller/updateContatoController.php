@@ -18,7 +18,7 @@ class UpdateContatoController implements RequestController
     {
         
         $contato = new Contato(
-            $_GET['id'], 
+            $_POST['id'], 
             $_POST['name'], 
             $_POST['tel'], 
             $_POST['cel'], 
@@ -30,7 +30,7 @@ class UpdateContatoController implements RequestController
             $_POST['comp'], 
             $_POST['district'], 
             $_POST['city'],
-             $_POST['uf']
+            $_POST['uf']
         );
 
         $contatoSevice = new ContatoService();

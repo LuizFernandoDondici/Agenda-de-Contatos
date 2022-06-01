@@ -69,9 +69,11 @@
                     <input class="form-input" type="text" name="uf">
                 </div>
                 <div>
-                    <button class="form-btn" type="submit"> Salvar </button>
+                    <button class="form-btn" id="btn-save-contato" type="submit"> Salvar </button>
                 </div>
             </form> 
+
+            <script src="../../script/ajax/ajax-save-contato.js"></script>
             
         </Section>
     </main>

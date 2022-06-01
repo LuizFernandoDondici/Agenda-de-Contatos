@@ -127,10 +127,12 @@
                     <input class="form-input" type="text" name="uf" value="<?php echo $contato['uf'];?>">
                 </div>
                 <div>
-                    <button class="form-btn" type="submit"> Atualizar </button>
+                    <button class="form-btn" id="btn-update-contato" type="submit"> Atualizar </button>
                 </div> 
             </form> 
             <?php endif; ?> 
+
+            <script src="../../script/ajax/ajax-update-contato.js"></script>
             
         </Section>
     </main>
