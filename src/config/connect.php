@@ -35,7 +35,7 @@ class Connect
             return $pdo;
 
         } catch (\Throwable $th) {
-            echo "erro DB";
+            header('Location: /erro', true, 302);
         }
     }
 

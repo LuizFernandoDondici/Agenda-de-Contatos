@@ -45,7 +45,7 @@ class ContatoDAO
             return $stmt->execute();
 
         } catch (\Throwable $th) {
-            echo 'erro insert';
+            header('Location: /erro', true, 302);
         }
     }
 
@@ -65,7 +65,7 @@ class ContatoDAO
             return $listContato;
 
         } catch (\Throwable $th) {
-            echo 'erro select';
+            header('Location: /erro', true, 302);
         }
     }
 
@@ -87,7 +87,7 @@ class ContatoDAO
             return $contactArray;
 
         } catch (\Throwable $th) {
-            echo 'erro select';
+            header('Location: /erro', true, 302);
         }
     }
 
@@ -121,7 +121,7 @@ class ContatoDAO
             return $stmt->execute();
 
         } catch (\Throwable $th) {
-            echo 'erro uptade';
+            header('Location: /erro', true, 302);
         }
     }
 
@@ -139,7 +139,7 @@ class ContatoDAO
             return $stmt->execute();
 
         } catch (\Throwable $th) {
-            echo 'erro delete';
+            header('Location: /erro', true, 302);
         }
     }
 
