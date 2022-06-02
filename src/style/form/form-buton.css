@@ -8,16 +8,24 @@
     margin: 15px 0 0 0;
     outline: 0;
     padding: 10px 0;
-    width: 100%;
     text-align: center;
+    transition: all 0.5s;
+    width: 100%;
+}
+
+.form-btn:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    transition: all 0.5s;
 }
 
 #btn-save-contato {
     background-color: mediumblue;
+    border-color: mediumblue;
 }
 
 #btn-update-contato {
     background-color: darkcyan; 
+    border-color: darkcyan;
 }
 
 .form-link {
@@ -28,7 +36,13 @@
     padding: 1%;
     text-align: center;
     text-decoration: none;
+    transition: all 0.5s;
     width: 47.7%;
+}
+
+.form-link:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    transition: all 0.5s;
 }
 
 #link-edit-contato {
