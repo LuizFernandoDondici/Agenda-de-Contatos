@@ -23,7 +23,7 @@
                 <thead>
                     <tr>
                         <th id="thead-nome"> Nome </th>
-                        <th id="thead-ação"> Vizualizar </th>
+                        <th id="thead-ação"> Visualizar </th>
                     </tr>
                 </thead>
                 <tbody>
