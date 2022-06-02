@@ -7,4 +7,12 @@ use AgendaDeContatos\Src\Route\Route;
 
 $route = new Route();
 
-$route->setRoute($_SERVER['PATH_INFO']);
+$path = $_SERVER['PATH_INFO'];
+
+if ($_SERVER['PATH_INFO'] == null) {
+    $path = '/lista-contato';
+}
+
+ob_clean();
+
+$route->setRoute($path);
