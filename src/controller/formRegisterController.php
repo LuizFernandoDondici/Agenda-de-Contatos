@@ -11,6 +11,8 @@ class FormRegisterController implements RequestController
     {
     }
 
+    // Controlador que renderiza para pagina de formulario.
+
     public function processRequest(): void
     {
         require __DIR__ . "../../view/body/form-register.php";

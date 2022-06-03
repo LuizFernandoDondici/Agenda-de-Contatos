@@ -12,6 +12,8 @@ class ListContatoController implements RequestController
     {
     }
 
+    // Controlador que chama função para buscar contatos e renderiza para pagina de lista de contatos.
+
     public function processRequest(): void
     {
         

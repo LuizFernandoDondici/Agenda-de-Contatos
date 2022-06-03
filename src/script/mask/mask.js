@@ -1,4 +1,6 @@
 
+// Mascaras de formulario.
+
 document.querySelector('[name=name]').addEventListener('input', (e)=>{
     
     document.querySelector('[name=name]').value = e.target.value

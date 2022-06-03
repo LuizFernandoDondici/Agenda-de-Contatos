@@ -8,14 +8,17 @@ class ContatoDAO
 {
 
     private $conn;
-    
 
+
+    // Construtor com objeto PDO,
+    // Gera conecção com o BD.
     public function __construct()
     {
         $this->conn = Connect::createConnection();
     }
-
     
+
+    // Função que salva contato no BD.
     public function createContato(Contato $contato):bool
     {
         try {
@@ -50,6 +53,7 @@ class ContatoDAO
     }
 
 
+    // Função que busca todos contatos no BD.
     public function findAllContatos():array
     {
         try {
@@ -70,6 +74,7 @@ class ContatoDAO
     }
 
 
+    // Função que busca um contato no BD.
     public function findContatoById($id):array
     {
         try {
@@ -92,6 +97,7 @@ class ContatoDAO
     }
 
 
+    // Função que atualiza contato no BD.
     public function updateContato(Contato $contato):bool
     {
         try {
@@ -126,6 +132,7 @@ class ContatoDAO
     }
 
 
+    // Função que deleta contato no BD.
     public function deleteContato($id):bool
     {
         try {

@@ -14,4 +14,4 @@ Como a aplicação não depende de nenhuma biblioteca externa, só é preciso ba
 - Abra o terminal na pasta da aplicação,
 - Digite: php -S localhost:8000
 - Abra o navegador de sua preferência,
-- Digite: <http://localhost:8000/>
+- Digite: <http://localhost:8000/lista-contato>

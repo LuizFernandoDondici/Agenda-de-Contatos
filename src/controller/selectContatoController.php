@@ -12,6 +12,8 @@ class SelectContatoController implements RequestController
     {
     }
 
+    // Controlador que chama função para buscar contatos pelo id e renderiza para pagina de formulario.
+
     public function processRequest(): void
     {
 

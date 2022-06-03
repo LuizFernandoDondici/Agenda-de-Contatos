@@ -13,6 +13,8 @@ use AgendaDeContatos\Src\Controller\UpdateContatoController;
 class Route
 {
 
+    // Função que chama o controlador responsavel pela requisição.
+    
     public function setRoute(String $path):void
     {
         

@@ -14,6 +14,10 @@ class UpdateContatoController implements RequestController
     {
     }
 
+    // Controlador que chama função apra validar dados do input. 
+    // Se for validado, chama a função para atualizar contatos e retorna JSON com codigo de sucesso.
+    // Se não for validado, retorna um JSON com codigo de sucesso e mensagem de erro.
+
     public function processRequest(): void
     {
         

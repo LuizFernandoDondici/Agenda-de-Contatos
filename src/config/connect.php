@@ -7,6 +7,8 @@ use PDO;
 class Connect
 {
 
+    // Função estatica que cria uma conexão, a tabela 'contatos' e retorna um objeto PDO.
+    
     public static function createConnection()
     {
         try {

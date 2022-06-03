@@ -69,6 +69,7 @@ class Contato
     
     public function getTel()
     {
+        // Replace para corrigir alterações das mascaras de formulario.
         return str_replace(array("(", ")", "-", " "), "", $this->tel);
     }
 
@@ -82,6 +83,7 @@ class Contato
     
     public function getCel()
     {
+        // Replace para corrigir alterações das mascaras de formulario.
         return str_replace(array("(", ")", "-", " "), "", $this->cel);
     }
 
@@ -121,6 +123,7 @@ class Contato
     
     public function getCep()
     {
+        // Replace para corrigir alterações das mascaras de formulario.
         return str_replace("-", "", $this->cep);
     }
 

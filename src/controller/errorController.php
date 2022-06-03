@@ -11,6 +11,8 @@ class ErrorController implements RequestController
     {
     }
 
+    // Controlador que renderiza para pagina de erro.
+
     public function processRequest(): void
     {
         require __DIR__ . "../../view/body/pag-error.php";

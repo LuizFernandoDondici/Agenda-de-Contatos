@@ -12,6 +12,8 @@ class DeleteContatoController implements RequestController
     {
     }
 
+    // Controlador que chama função para deletar contato e renderiza para pagina de lista de contatos.
+
     public function processRequest(): void
     {
 

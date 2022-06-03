@@ -14,6 +14,10 @@ class SaveContatoController implements RequestController
     {
     }
 
+    // Controlador que chama função para validar dados do input. 
+    // Se for validado, chama a função para salvar contatos e retorna JSON com codigo de sucesso.
+    // Se não for validado, retorna um JSON com codigo de sucesso e mensagem de erro.
+
     public function processRequest(): void
     {
         

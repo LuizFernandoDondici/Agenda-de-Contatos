@@ -1,4 +1,8 @@
 
+// Ajax para salvar contato.
+// Se codigo de sucesso for 1, salva e renderiza para pagina de lista de contatos.
+// Se codigo de sucesso for 0, exibe mensagem de erro.
+
 document.querySelector('#btn-save-contato').addEventListener('click', (e)=>{
     e.preventDefault();
 
@@ -36,7 +40,7 @@ document.querySelector('#btn-save-contato').addEventListener('click', (e)=>{
                     }, 4000); 
 
                 } else {
-                    window.alert('erro');
+                    window.location.href = '/erro';
                 }
             }))
         })

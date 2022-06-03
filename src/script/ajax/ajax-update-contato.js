@@ -1,4 +1,8 @@
 
+// Ajax para atualizar contato.
+// Se codigo de sucesso for 1, salva e renderiza para pagina de lista de contatos.
+// Se codigo de sucesso for 0, exibe mensagem de erro.
+
 document.querySelector('#btn-update-contato').addEventListener('click', (e)=>{
     e.preventDefault();
 
@@ -29,7 +33,7 @@ document.querySelector('#btn-update-contato').addEventListener('click', (e)=>{
         .then(response=>{response.json()
             .then((res=>{
                 if (res.success == 1) {
-                    window.location.href = '/visualizar-contato?id='+id
+                    window.location.href = '/visualizar-contato?id='+id;
                 } else if (res.success == 0){
 
                     document.querySelector('.alert-register').style.display = 'block';
@@ -40,7 +44,7 @@ document.querySelector('#btn-update-contato').addEventListener('click', (e)=>{
                     }, 4000); 
 
                 } else {
-                    window.alert('erro');
+                    window.location.href = '/erro';
                 }
             }))
         })

@@ -1,5 +1,7 @@
 <?php
 
+// Função que faz o carregamento automatico das classes.
+
 spl_autoload_register(function (string $nomeClasse){
 
     $caminhoArquivo =  __DIR__ . $nomeClasse;
@@ -11,7 +13,6 @@ spl_autoload_register(function (string $nomeClasse){
         require_once $caminhoArquivo;
 
     } else {
-        
         echo "Caminho \"$caminhoArquivo\" não encontrado!";
         exit();
     }

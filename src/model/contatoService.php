@@ -9,6 +9,7 @@ class ContatoService
     {
     }
 
+    // Função que valida dados do input e retorna msg de erro.
 
     public function validadeContato(Contato $contato):string
     {
@@ -87,9 +88,8 @@ class ContatoService
             }
         }
         
-
         return $msgError;
-
+        
     }
 
 }
